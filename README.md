@@ -2,6 +2,8 @@
 
 Turn JUnit XML into an inspectable failure-triage report. Import test attempts into SQLite, compare two explicit runs and export HTML, JSON and CSV with source digests and per-attempt diagnostics.
 
+[Inspect the synthetic example report](https://s4lmon778.github.io/testsignal/). This is a published example output; the importer runs locally.
+
 Requires Python 3.11+; no third-party packages.
 
 ```powershell

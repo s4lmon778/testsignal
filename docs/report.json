@@ -1,0 +1,124 @@
+{
+  "run": {
+    "id": 2,
+    "label": "Synthetic current",
+    "digest": "fa18723c1f79e40f7bb6600e47dcc6d0bb085e2bfd6e75d5259bd0ff6bf6b540"
+  },
+  "baseline": 1,
+  "counts": {
+    "passed": 1,
+    "failed": 1,
+    "mixed": 1,
+    "skipped": 1
+  },
+  "attempt_count": 5,
+  "cases": [
+    {
+      "key": "[\"\", \"api\", \"save\"]",
+      "name": "save",
+      "classname": "api",
+      "file": "",
+      "result": "failed",
+      "change": "regressed",
+      "attempts": [
+        {
+          "run_id": 2,
+          "ordinal": 0,
+          "key": "[\"\", \"api\", \"save\"]",
+          "name": "save",
+          "classname": "api",
+          "file": "",
+          "status": "failure",
+          "seconds": 0.4,
+          "message": "Expected version 3, received 2"
+        }
+      ],
+      "seconds": 0.4,
+      "review_required": true
+    },
+    {
+      "key": "[\"\", \"browser\", \"restore\"]",
+      "name": "restore",
+      "classname": "browser",
+      "file": "",
+      "result": "passed",
+      "change": "recovered",
+      "attempts": [
+        {
+          "run_id": 2,
+          "ordinal": 1,
+          "key": "[\"\", \"browser\", \"restore\"]",
+          "name": "restore",
+          "classname": "browser",
+          "file": "",
+          "status": "passed",
+          "seconds": 1.2,
+          "message": ""
+        }
+      ],
+      "seconds": 1.2,
+      "review_required": false
+    },
+    {
+      "key": "[\"\", \"browser\", \"retry\"]",
+      "name": "retry",
+      "classname": "browser",
+      "file": "",
+      "result": "mixed",
+      "change": "new",
+      "attempts": [
+        {
+          "run_id": 2,
+          "ordinal": 2,
+          "key": "[\"\", \"browser\", \"retry\"]",
+          "name": "retry",
+          "classname": "browser",
+          "file": "",
+          "status": "error",
+          "seconds": 2.0,
+          "message": "Response timeout"
+        },
+        {
+          "run_id": 2,
+          "ordinal": 3,
+          "key": "[\"\", \"browser\", \"retry\"]",
+          "name": "retry",
+          "classname": "browser",
+          "file": "",
+          "status": "passed",
+          "seconds": 0.8,
+          "message": ""
+        }
+      ],
+      "seconds": 2.8,
+      "review_required": true
+    },
+    {
+      "key": "[\"\", \"api\", \"optional\"]",
+      "name": "optional",
+      "classname": "api",
+      "file": "",
+      "result": "skipped",
+      "change": "new",
+      "attempts": [
+        {
+          "run_id": 2,
+          "ordinal": 4,
+          "key": "[\"\", \"api\", \"optional\"]",
+          "name": "optional",
+          "classname": "api",
+          "file": "",
+          "status": "skipped",
+          "seconds": 0.0,
+          "message": "Environment unavailable"
+        }
+      ],
+      "seconds": 0.0,
+      "review_required": false
+    }
+  ],
+  "missing_from_current": [
+    "[\"\", \"api\", \"legacy\"]"
+  ],
+  "release_decision": "Human review required; this report does not approve a release."
+}

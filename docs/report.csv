@@ -1,0 +1,5 @@
+class,name,result,change,attempts,seconds,review_required
+api,save,failed,regressed,1,0.4,True
+browser,restore,passed,recovered,1,1.2,False
+browser,retry,mixed,new,2,2.8,True
+api,optional,skipped,new,1,0.0,False
